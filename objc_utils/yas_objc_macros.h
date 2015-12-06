@@ -8,35 +8,35 @@
 #pragma once
 
 #if ! __has_feature(objc_arc)
-    #define YASAutorelease(__v) [__v autorelease]
-    #define YASRetain(__v) [__v retain]
-    #define YASRetainOrIgnore(__v) [__v retain]
-    #define YASRelease(__v) [__v release]
-    #define YASRetainAndAutorelease(__v) [[__v retain] autorelease]
-    #define YASSuperDealloc [super dealloc]
-    #define YASDispatchQueueRelease(__v) dispatch_release(__v)
-    #define YASWeakForBlock __block
-    #define YASWeakForProperty assign
-    #define YASWeakForVariable __unsafe_unretained
+    #define yas_autorelease(__v) [__v autorelease]
+    #define yas_retain(__v) [__v retain]
+    #define yas_retain_or_ignore(__v) [__v retain]
+    #define yas_release(__v) [__v release]
+    #define yas_retain_and_autorelease(__v) [[__v retain] autorelease]
+    #define yas_super_dealloc() [super dealloc]
+    #define yas_dispatch_queue_release(__v) dispatch_release(__v)
+    #define yas_weak_for_block __block
+    #define yas_weak_for_property assign
+    #define yas_weak_for_variable __unsafe_unretained
 #else
-    #define YASAutorelease(__v) __v
-    #define YASRetain(__v) __v
-    #define YASRetainOrIgnore(__v)
-    #define YASRelease(__v)
-    #define YASRetainAndAutorelease(__v) __v
-    #define YASSuperDealloc
+    #define yas_autorelease(__v) __v
+    #define yas_retain(__v) __v
+    #define yas_retain_or_ignore(__v)
+    #define yas_release(__v)
+    #define yas_retain_and_autorelease(__v) __v
+    #define yas_super_dealloc()
     #if OS_OBJECT_USE_OBJC
-        #define YASDispatchQueueRelease(__v)
+        #define yas_dispatch_queue_release(__v)
     #else
-        #define YASDispatchQueueRelease(__v) dispatch_release(__v)
+        #define yas_dispatch_queue_release(__v) dispatch_release(__v)
     #endif
-    #define YASWeakForBlock __weak
-    #define YASWeakForProperty weak
-    #define YASWeakForVariable __weak
+    #define yas_weak_for_block __weak
+    #define yas_weak_for_property weak
+    #define yas_weak_for_variable __weak
 #endif
 
 #if DEBUG
-    #define YASLog(...) NSLog(__VA_ARGS__)
+    #define yas_log(...) NSLog(__VA_ARGS__)
 #else
-    #define YASLog(...)
+    #define yas_log(...)
 #endif
