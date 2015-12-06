@@ -1,0 +1,268 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B60F444C1C1419A30028C68A /* yas_objc_container.mm in Sources */ = {isa = PBXBuildFile; fileRef = B60F444A1C1419A30028C68A /* yas_objc_container.mm */; };
+		B60F44501C141A040028C68A /* yas_objc_container_tests.mm in Sources */ = {isa = PBXBuildFile; fileRef = B60F444F1C141A040028C68A /* yas_objc_container_tests.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B60F443F1C1419750028C68A /* objc_utils_test_non_arc.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = objc_utils_test_non_arc.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B60F44441C1419750028C68A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B60F44491C1419A30028C68A /* yas_objc_container.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yas_objc_container.h; sourceTree = "<group>"; };
+		B60F444A1C1419A30028C68A /* yas_objc_container.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = yas_objc_container.mm; sourceTree = "<group>"; };
+		B60F444B1C1419A30028C68A /* yas_objc_macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yas_objc_macros.h; sourceTree = "<group>"; };
+		B60F444F1C141A040028C68A /* yas_objc_container_tests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = yas_objc_container_tests.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B60F443C1C1419750028C68A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B60F44341C1419420028C68A = {
+			isa = PBXGroup;
+			children = (
+				B60F44481C1419A30028C68A /* objc_utils */,
+				B60F44411C1419750028C68A /* objc_utils_test_non_arc */,
+				B60F44401C1419750028C68A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B60F44401C1419750028C68A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B60F443F1C1419750028C68A /* objc_utils_test_non_arc.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B60F44411C1419750028C68A /* objc_utils_test_non_arc */ = {
+			isa = PBXGroup;
+			children = (
+				B60F444F1C141A040028C68A /* yas_objc_container_tests.mm */,
+				B60F44441C1419750028C68A /* Info.plist */,
+			);
+			path = objc_utils_test_non_arc;
+			sourceTree = "<group>";
+		};
+		B60F44481C1419A30028C68A /* objc_utils */ = {
+			isa = PBXGroup;
+			children = (
+				B60F44491C1419A30028C68A /* yas_objc_container.h */,
+				B60F444A1C1419A30028C68A /* yas_objc_container.mm */,
+				B60F444B1C1419A30028C68A /* yas_objc_macros.h */,
+			);
+			name = objc_utils;
+			path = ../objc_utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B60F443E1C1419750028C68A /* objc_utils_test_non_arc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B60F44451C1419750028C68A /* Build configuration list for PBXNativeTarget "objc_utils_test_non_arc" */;
+			buildPhases = (
+				B60F443B1C1419750028C68A /* Sources */,
+				B60F443C1C1419750028C68A /* Frameworks */,
+				B60F443D1C1419750028C68A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = objc_utils_test_non_arc;
+			productName = objc_utils_test_non_arc;
+			productReference = B60F443F1C1419750028C68A /* objc_utils_test_non_arc.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B60F44351C1419420028C68A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				TargetAttributes = {
+					B60F443E1C1419750028C68A = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = B60F44381C1419420028C68A /* Build configuration list for PBXProject "objc_utils_test" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B60F44341C1419420028C68A;
+			productRefGroup = B60F44401C1419750028C68A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B60F443E1C1419750028C68A /* objc_utils_test_non_arc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B60F443D1C1419750028C68A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B60F443B1C1419750028C68A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B60F444C1C1419A30028C68A /* yas_objc_container.mm in Sources */,
+				B60F44501C141A040028C68A /* yas_objc_container_tests.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B60F44391C1419420028C68A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		B60F443A1C1419420028C68A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		B60F44461C1419750028C68A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = objc_utils_test_non_arc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.objective-audio.objc-utils-test-non-arc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B60F44471C1419750028C68A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = objc_utils_test_non_arc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.objective-audio.objc-utils-test-non-arc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B60F44381C1419420028C68A /* Build configuration list for PBXProject "objc_utils_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B60F44391C1419420028C68A /* Debug */,
+				B60F443A1C1419420028C68A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B60F44451C1419750028C68A /* Build configuration list for PBXNativeTarget "objc_utils_test_non_arc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B60F44461C1419750028C68A /* Debug */,
+				B60F44471C1419750028C68A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B60F44351C1419420028C68A /* Project object */;
+}
