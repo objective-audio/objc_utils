@@ -1,0 +1,9 @@
+language: objective-c
+osx_image: xcode7.1
+branches:
+  only:
+    - master
+notifications:
+  email: false
+script:
+  - xcodebuild -project objc_utils_test/objc_utils_test.xcodeproj -scheme objc_utils_test_non_arc -configuration Debug OBJROOT=build -sdk macosx clean test
