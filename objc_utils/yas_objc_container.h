@@ -26,7 +26,7 @@ namespace objc {
         ~weak_holder();
         void set_object(const id object);
 
-        YASWeakForVariable id _object;
+        yas_weak_for_variable id _object;
     };
 
     using strong = strong_holder;

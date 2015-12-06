@@ -13,17 +13,17 @@ strong_holder::strong_holder() : _object(nil) {
 }
 
 strong_holder::strong_holder(const id object) : _object(object) {
-    YASRetainOrIgnore(object);
+    yas_retain_or_ignore(object);
 }
 
 strong_holder::~strong_holder() {
-    YASRelease(_object);
+    yas_release(_object);
     _object = nil;
 }
 
 void strong_holder::set_object(const id object) {
-    YASRetainOrIgnore(object);
-    YASRelease(_object);
+    yas_retain_or_ignore(object);
+    yas_release(_object);
     _object = object;
 }
 
@@ -55,7 +55,7 @@ template <typename T>
 container<T>::container(const container &other) {
     id obj = other.retained_object();
     set_object(obj);
-    YASRelease(obj);
+    yas_release(obj);
 }
 
 template container<strong_holder>::container(const container<strong_holder> &);
@@ -65,7 +65,7 @@ template <typename T>
 container<T>::container(container &&other) {
     id obj = other.retained_object();
     set_object(obj);
-    YASRelease(obj);
+    yas_release(obj);
     other.set_object(nil);
 }
 
@@ -76,7 +76,7 @@ template <typename T>
 container<T> &container<T>::operator=(const container<T> &rhs) {
     id obj = rhs.retained_object();
     set_object(obj);
-    YASRelease(obj);
+    yas_release(obj);
 
     return *this;
 }
@@ -88,7 +88,7 @@ template <typename T>
 container<T> &container<T>::operator=(container<T> &&rhs) {
     id obj = rhs.retained_object();
     set_object(obj);
-    YASRelease(obj);
+    yas_release(obj);
     rhs.set_object(nil);
 
     return *this;
@@ -137,7 +137,7 @@ template id container<weak_holder>::object() const;
 template <typename T>
 id container<T>::retained_object() const {
     std::lock_guard<std::recursive_mutex> lock(_mutex);
-    return YASRetain(_holder._object);
+    return yas_retain(_holder._object);
 }
 
 template id container<strong_holder>::retained_object() const;
@@ -146,7 +146,7 @@ template id container<weak_holder>::retained_object() const;
 template <typename T>
 id container<T>::autoreleased_object() const {
     std::lock_guard<std::recursive_mutex> lock(_mutex);
-    return YASRetainAndAutorelease(_holder._object);
+    return yas_retain_and_autorelease(_holder._object);
 }
 
 template id container<strong_holder>::autoreleased_object() const;
@@ -156,7 +156,7 @@ template <typename T>
 container<strong_holder> container<T>::lock() const {
     id obj = retained_object();
     container<strong> strong_container(obj);
-    YASRelease(obj);
+    yas_release(obj);
     return strong_container;
 }
 
