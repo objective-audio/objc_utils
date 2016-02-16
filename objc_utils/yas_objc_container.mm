@@ -1,6 +1,5 @@
 //
 //  yas_objc_container.mm
-//  Copyright (c) 2015 Yuki Yasoshima.
 //
 
 #include "yas_objc_container.h"
