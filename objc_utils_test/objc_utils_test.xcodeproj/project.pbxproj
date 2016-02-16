@@ -94,7 +94,7 @@
 		B60F44351C1419420028C68A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0720;
 				TargetAttributes = {
 					B60F443E1C1419750028C68A = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -144,6 +144,8 @@
 		B60F44391C1419420028C68A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
@@ -261,6 +263,7 @@
 				B60F44471C1419750028C68A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

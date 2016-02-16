@@ -1,6 +1,5 @@
 //
 //  yas_objc_macros.h
-//  Copyright (c) 2015 Yuki Yasoshima.
 //
 
 // clang-format off
