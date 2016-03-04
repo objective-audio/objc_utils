@@ -423,4 +423,18 @@ static int _objc_object_count = 0;
     XCTAssertEqual(_objc_object_count, 0);
 }
 
+- (void)test_dispatch_retaining {
+    dispatch_queue_t queue = dispatch_queue_create("test_serial_queue", DISPATCH_QUEUE_SERIAL);
+
+    XCTAssertEqual([queue retainCount], 1);
+
+    yas_dispatch_queue_retain(queue);
+
+    XCTAssertEqual([queue retainCount], 2);
+
+    yas_dispatch_queue_release(queue);
+
+    XCTAssertEqual([queue retainCount], 1);
+}
+
 @end
