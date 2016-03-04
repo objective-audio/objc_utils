@@ -12,18 +12,18 @@ namespace yas {
 namespace objc {
     struct strong_holder {
         strong_holder();
-        strong_holder(const id object);
+        strong_holder(id const object);
         ~strong_holder();
-        void set_object(const id object);
+        void set_object(id const object);
 
         id _object;
     };
 
     struct weak_holder {
         weak_holder();
-        weak_holder(const id object);
+        weak_holder(id const object);
         ~weak_holder();
-        void set_object(const id object);
+        void set_object(id const object);
 
         yas_weak_for_variable id _object;
     };
@@ -34,7 +34,7 @@ namespace objc {
     template <typename T = strong>
     class container {
        public:
-        container(const id object = nil);
+        container(id const object = nil);
 
         ~container() = default;
 
@@ -43,11 +43,11 @@ namespace objc {
         container &operator=(const container &);
         container &operator=(container &&);
 
-        container &operator=(const id object);
+        container &operator=(id const object);
 
         explicit operator bool() const;
 
-        void set_object(const id object);
+        void set_object(id const object);
         id object() const;
         id retained_object() const;
         id autoreleased_object() const;
