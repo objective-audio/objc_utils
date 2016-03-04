@@ -2,16 +2,16 @@
 //  yas_objc_container.mm
 //
 
+#include <Foundation/Foundation.h>
 #include "yas_objc_container.h"
 #include "yas_objc_macros.h"
-#include <Foundation/Foundation.h>
 
 using namespace yas::objc;
 
 strong_holder::strong_holder() : _object(nil) {
 }
 
-strong_holder::strong_holder(const id object) : _object(object) {
+strong_holder::strong_holder(id const object) : _object(object) {
     yas_retain_or_ignore(object);
 }
 
@@ -20,7 +20,7 @@ strong_holder::~strong_holder() {
     _object = nil;
 }
 
-void strong_holder::set_object(const id object) {
+void strong_holder::set_object(id const object) {
     yas_retain_or_ignore(object);
     yas_release(_object);
     _object = object;
@@ -29,36 +29,35 @@ void strong_holder::set_object(const id object) {
 weak_holder::weak_holder() : _object(nil) {
 }
 
-weak_holder::weak_holder(const id object) : _object(object) {
+weak_holder::weak_holder(id const object) : _object(object) {
 }
 
 weak_holder::~weak_holder() {
     _object = nil;
 }
 
-void weak_holder::set_object(const id object) {
+void weak_holder::set_object(id const object) {
     _object = object;
 }
 
 #pragma mark -
 
 template <typename T>
-container<T>::container(const id object)
-    : _holder(object) {
+container<T>::container(id const object) : _holder(object) {
 }
 
-template container<strong_holder>::container(const id object);
-template container<weak_holder>::container(const id object);
+template container<strong_holder>::container(id const object);
+template container<weak_holder>::container(id const object);
 
 template <typename T>
-container<T>::container(const container &other) {
+container<T>::container(container const &other) {
     id obj = other.retained_object();
     set_object(obj);
     yas_release(obj);
 }
 
-template container<strong_holder>::container(const container<strong_holder> &);
-template container<weak_holder>::container(const container<weak_holder> &);
+template container<strong_holder>::container(container<strong_holder> const &);
+template container<weak_holder>::container(container<weak_holder> const &);
 
 template <typename T>
 container<T>::container(container &&other) {
@@ -72,7 +71,7 @@ template container<strong_holder>::container(container<strong_holder> &&);
 template container<weak_holder>::container(container<weak_holder> &&);
 
 template <typename T>
-container<T> &container<T>::operator=(const container<T> &rhs) {
+container<T> &container<T>::operator=(container<T> const &rhs) {
     id obj = rhs.retained_object();
     set_object(obj);
     yas_release(obj);
@@ -80,8 +79,8 @@ container<T> &container<T>::operator=(const container<T> &rhs) {
     return *this;
 }
 
-template container<strong_holder> &container<strong_holder>::operator=(const container<strong_holder> &);
-template container<weak_holder> &container<weak_holder>::operator=(const container<weak_holder> &);
+template container<strong_holder> &container<strong_holder>::operator=(container<strong_holder> const &);
+template container<weak_holder> &container<weak_holder>::operator=(container<weak_holder> const &);
 
 template <typename T>
 container<T> &container<T>::operator=(container<T> &&rhs) {
@@ -97,14 +96,14 @@ template container<strong_holder> &container<strong_holder>::operator=(container
 template container<weak_holder> &container<weak_holder>::operator=(container<weak_holder> &&);
 
 template <typename T>
-container<T> &container<T>::operator=(const id rhs) {
+container<T> &container<T>::operator=(id const rhs) {
     set_object(rhs);
 
     return *this;
 }
 
-template container<strong_holder> &container<strong_holder>::operator=(const id);
-template container<weak_holder> &container<weak_holder>::operator=(const id);
+template container<strong_holder> &container<strong_holder>::operator=(id const);
+template container<weak_holder> &container<weak_holder>::operator=(id const);
 
 template <typename T>
 container<T>::operator bool() const {
@@ -116,13 +115,13 @@ template container<strong_holder>::operator bool() const;
 template container<weak_holder>::operator bool() const;
 
 template <typename T>
-void container<T>::set_object(const id object) {
+void container<T>::set_object(id const object) {
     std::lock_guard<std::recursive_mutex> lock(_mutex);
     _holder.set_object(object);
 }
 
-template void container<strong_holder>::set_object(const id);
-template void container<weak_holder>::set_object(const id);
+template void container<strong_holder>::set_object(id const);
+template void container<weak_holder>::set_object(id const);
 
 template <typename T>
 id container<T>::object() const {
