@@ -42,3 +42,13 @@
 #else
     #define yas_log(...)
 #endif
+
+#if TARGET_OS_IPHONE
+
+#define yas_objc_color UIColor
+
+#elif TARGET_OS_MAC
+
+#define yas_objc_color NSColor
+
+#endif
