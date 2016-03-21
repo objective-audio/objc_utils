@@ -485,4 +485,27 @@ static int _objc_object_count = 0;
     objc_object = nil;
 }
 
+- (void)test_make_container_with_func {
+    {
+        auto container = yas::make_container<YASObjCContainerTest *>(
+            []() { return yas_autorelease([[YASObjCContainerTest alloc] init]); });
+
+        XCTAssertNotNil(container.object());
+        XCTAssertEqual([container.object() retainCount], 1);
+    }
+
+    XCTAssertEqual(_objc_object_count, 0);
+}
+
+- (void)test_make_container_move {
+    {
+        auto container = yas::make_container_move([[YASObjCContainerTest alloc] init]);
+
+        XCTAssertNotNil(container.object());
+        XCTAssertEqual([container.object() retainCount], 1);
+    }
+
+    XCTAssertEqual(_objc_object_count, 0);
+}
+
 @end

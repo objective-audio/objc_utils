@@ -98,6 +98,23 @@ objc::container<C> make_container(C const obj) {
 }
 
 template <typename C>
+objc::container<C> make_container(std::function<C(void)> const &func) {
+    objc::container<C> container;
+    @autoreleasepool {
+        auto obj = func();
+        container.set_object(obj);
+    }
+    return container;
+}
+
+template <typename C>
+objc::container<C> make_container_move(C const obj) {
+    objc::container<C> container(obj);
+    yas_release(obj);
+    return container;
+}
+
+template <typename C>
 objc::container<C, objc::weak> make_weak_container(C const obj) {
     return objc::container<C, objc::weak>(obj);
 }
