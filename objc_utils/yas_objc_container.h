@@ -67,6 +67,10 @@ namespace objc {
 }
 template <typename C>
 objc::container<C> make_container(C const);
+template <typename C>
+objc::container<C> make_container(std::function<C(void)> const &func);
+template <typename C>
+objc::container<C> make_container_move(C const obj);
 
 template <typename C>
 objc::container<C, objc::weak> make_weak_container(C const);
