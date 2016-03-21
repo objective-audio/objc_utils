@@ -60,6 +60,11 @@ namespace objc {
     }
 
     template <typename C, typename T>
+    C container<C, T, enable_if_id_t<C>>::operator()() const {
+        return object();
+    }
+
+    template <typename C, typename T>
     void container<C, T, enable_if_id_t<C>>::set_object(C const object) {
         std::lock_guard<std::recursive_mutex> lock(_mutex);
         _holder.set_object(object);

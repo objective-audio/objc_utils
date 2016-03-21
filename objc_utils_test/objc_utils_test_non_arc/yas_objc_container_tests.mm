@@ -508,4 +508,17 @@ static int _objc_object_count = 0;
     XCTAssertEqual(_objc_object_count, 0);
 }
 
+- (void)test_operator {
+    auto container = yas::make_container_move([[YASObjCContainerTest alloc] init]);
+
+    XCTAssertEqual([container.object() retainCount], 1);
+
+    auto object = container();
+    
+    XCTAssertEqual([container.object() retainCount], 1);
+
+    XCTAssertNotNil(object);
+    XCTAssertEqualObjects([object class], [YASObjCContainerTest class]);
+}
+
 @end

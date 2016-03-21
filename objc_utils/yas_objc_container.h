@@ -52,6 +52,7 @@ namespace objc {
         container &operator=(C const object);
 
         explicit operator bool() const;
+        C operator()() const;
 
         void set_object(C const object);
         C object() const;
