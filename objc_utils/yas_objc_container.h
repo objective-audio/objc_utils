@@ -52,9 +52,9 @@ namespace objc {
         container &operator=(C const object);
 
         explicit operator bool() const;
-        C operator()() const;
 
         void set_object(C const object);
+        void move_object(C const object);
         C object() const;
         C retained_object() const;
         C autoreleased_object() const;
