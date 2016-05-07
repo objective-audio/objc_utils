@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B60F443E1C1419750028C68A"
-               BuildableName = "objc_utils_test_non_arc.xctest"
-               BlueprintName = "objc_utils_test_non_arc"
+               BuildableName = "objc_utils_test_mac_non_arc.xctest"
+               BlueprintName = "objc_utils_test_mac_non_arc"
                ReferencedContainer = "container:objc_utils_test.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -34,8 +34,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B60F443E1C1419750028C68A"
-               BuildableName = "objc_utils_test_non_arc.xctest"
-               BlueprintName = "objc_utils_test_non_arc"
+               BuildableName = "objc_utils_test_mac_non_arc.xctest"
+               BlueprintName = "objc_utils_test_mac_non_arc"
                ReferencedContainer = "container:objc_utils_test.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -57,8 +57,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B60F443E1C1419750028C68A"
-            BuildableName = "objc_utils_test_non_arc.xctest"
-            BlueprintName = "objc_utils_test_non_arc"
+            BuildableName = "objc_utils_test_mac_non_arc.xctest"
+            BlueprintName = "objc_utils_test_mac_non_arc"
             ReferencedContainer = "container:objc_utils_test.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -75,8 +75,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B60F443E1C1419750028C68A"
-            BuildableName = "objc_utils_test_non_arc.xctest"
-            BlueprintName = "objc_utils_test_non_arc"
+            BuildableName = "objc_utils_test_mac_non_arc.xctest"
+            BlueprintName = "objc_utils_test_mac_non_arc"
             ReferencedContainer = "container:objc_utils_test.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
