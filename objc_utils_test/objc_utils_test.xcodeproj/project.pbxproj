@@ -7,18 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B60F444C1C1419A30028C68A /* yas_objc_container.mm in Sources */ = {isa = PBXBuildFile; fileRef = B60F444A1C1419A30028C68A /* yas_objc_container.mm */; };
-		B60F44501C141A040028C68A /* yas_objc_container_tests.mm in Sources */ = {isa = PBXBuildFile; fileRef = B60F444F1C141A040028C68A /* yas_objc_container_tests.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B60F443F1C1419750028C68A /* objc_utils_test_non_arc.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = objc_utils_test_non_arc.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B60F44441C1419750028C68A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B60F44491C1419A30028C68A /* yas_objc_container.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yas_objc_container.h; sourceTree = "<group>"; };
-		B60F444A1C1419A30028C68A /* yas_objc_container.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = yas_objc_container.mm; sourceTree = "<group>"; };
 		B60F444B1C1419A30028C68A /* yas_objc_macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yas_objc_macros.h; sourceTree = "<group>"; };
-		B60F444F1C141A040028C68A /* yas_objc_container_tests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = yas_objc_container_tests.mm; sourceTree = "<group>"; };
-		B6F501B91C9C520E00A0B4A1 /* yas_objc_container_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yas_objc_container_private.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +46,6 @@
 		B60F44411C1419750028C68A /* objc_utils_test_non_arc */ = {
 			isa = PBXGroup;
 			children = (
-				B60F444F1C141A040028C68A /* yas_objc_container_tests.mm */,
 				B60F44441C1419750028C68A /* Info.plist */,
 			);
 			path = objc_utils_test_non_arc;
@@ -61,9 +54,6 @@
 		B60F44481C1419A30028C68A /* objc_utils */ = {
 			isa = PBXGroup;
 			children = (
-				B6F501B91C9C520E00A0B4A1 /* yas_objc_container_private.h */,
-				B60F44491C1419A30028C68A /* yas_objc_container.h */,
-				B60F444A1C1419A30028C68A /* yas_objc_container.mm */,
 				B60F444B1C1419A30028C68A /* yas_objc_macros.h */,
 			);
 			name = objc_utils;
@@ -135,8 +125,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B60F444C1C1419A30028C68A /* yas_objc_container.mm in Sources */,
-				B60F44501C141A040028C68A /* yas_objc_container_tests.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
