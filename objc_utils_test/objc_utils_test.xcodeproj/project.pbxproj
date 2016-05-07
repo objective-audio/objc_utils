@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		B6C413FA1CDDC4AD0012095F /* yas_objc_mac_class_tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C413F91CDDC4AD0012095F /* yas_objc_mac_class_tests.m */; };
 		B6C414021CDDC8F40012095F /* yas_objc_ios_class_tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C414011CDDC8F40012095F /* yas_objc_ios_class_tests.m */; };
+		B6F2CAE91CDE219700EF584B /* yas_objc_unowned.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F2CAE81CDE219700EF584B /* yas_objc_unowned.m */; };
+		B6F2CAEA1CDE219700EF584B /* yas_objc_unowned.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F2CAE81CDE219700EF584B /* yas_objc_unowned.m */; };
+		B6F2CAED1CDE250800EF584B /* yas_objc_unowned_tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F2CAEC1CDE250800EF584B /* yas_objc_unowned_tests.m */; };
+		B6F2CAEE1CDE250800EF584B /* yas_objc_unowned_tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F2CAEC1CDE250800EF584B /* yas_objc_unowned_tests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,9 @@
 		B6C413FF1CDDC8F40012095F /* objc_utils_test_ios_non_arc.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = objc_utils_test_ios_non_arc.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6C414011CDDC8F40012095F /* yas_objc_ios_class_tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = yas_objc_ios_class_tests.m; sourceTree = "<group>"; };
 		B6C414031CDDC8F40012095F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6F2CAE71CDE219700EF584B /* yas_objc_unowned.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yas_objc_unowned.h; sourceTree = "<group>"; };
+		B6F2CAE81CDE219700EF584B /* yas_objc_unowned.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yas_objc_unowned.m; sourceTree = "<group>"; };
+		B6F2CAEC1CDE250800EF584B /* yas_objc_unowned_tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = yas_objc_unowned_tests.m; path = objc_utils_test_common/yas_objc_unowned_tests.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +50,7 @@
 			isa = PBXGroup;
 			children = (
 				B60F44481C1419A30028C68A /* objc_utils */,
+				B6F2CAEB1CDE24E300EF584B /* objc_utils_test_common */,
 				B60F44411C1419750028C68A /* objc_utils_test_mac_non_arc */,
 				B6C414001CDDC8F40012095F /* objc_utils_test_ios_non_arc */,
 				B60F44401C1419750028C68A /* Products */,
@@ -72,6 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				B60F444B1C1419A30028C68A /* yas_objc_macros.h */,
+				B6F2CAE71CDE219700EF584B /* yas_objc_unowned.h */,
+				B6F2CAE81CDE219700EF584B /* yas_objc_unowned.m */,
 			);
 			name = objc_utils;
 			path = ../objc_utils;
@@ -84,6 +94,15 @@
 				B6C414031CDDC8F40012095F /* Info.plist */,
 			);
 			path = objc_utils_test_ios_non_arc;
+			sourceTree = "<group>";
+		};
+		B6F2CAEB1CDE24E300EF584B /* objc_utils_test_common */ = {
+			isa = PBXGroup;
+			children = (
+				B6F2CAEC1CDE250800EF584B /* yas_objc_unowned_tests.m */,
+			);
+			name = objc_utils_test_common;
+			path = ../objc_utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +199,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6C413FA1CDDC4AD0012095F /* yas_objc_mac_class_tests.m in Sources */,
+				B6F2CAE91CDE219700EF584B /* yas_objc_unowned.m in Sources */,
+				B6F2CAED1CDE250800EF584B /* yas_objc_unowned_tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +209,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6C414021CDDC8F40012095F /* yas_objc_ios_class_tests.m in Sources */,
+				B6F2CAEA1CDE219700EF584B /* yas_objc_unowned.m in Sources */,
+				B6F2CAEE1CDE250800EF584B /* yas_objc_unowned_tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
