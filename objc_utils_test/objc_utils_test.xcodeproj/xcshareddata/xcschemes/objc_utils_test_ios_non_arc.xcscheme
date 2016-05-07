@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0720"
+   LastUpgradeVersion = "0730"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B60F443E1C1419750028C68A"
-               BuildableName = "objc_utils_test_non_arc.xctest"
-               BlueprintName = "objc_utils_test_non_arc"
+               BlueprintIdentifier = "B6C413FE1CDDC8F40012095F"
+               BuildableName = "objc_utils_test_ios_non_arc.xctest"
+               BlueprintName = "objc_utils_test_ios_non_arc"
                ReferencedContainer = "container:objc_utils_test.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,20 +26,28 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      codeCoverageEnabled = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B60F443E1C1419750028C68A"
-               BuildableName = "objc_utils_test_non_arc.xctest"
-               BlueprintName = "objc_utils_test_non_arc"
+               BlueprintIdentifier = "B6C413FE1CDDC8F40012095F"
+               BuildableName = "objc_utils_test_ios_non_arc.xctest"
+               BlueprintName = "objc_utils_test_ios_non_arc"
                ReferencedContainer = "container:objc_utils_test.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "B6C413FE1CDDC8F40012095F"
+            BuildableName = "objc_utils_test_ios_non_arc.xctest"
+            BlueprintName = "objc_utils_test_ios_non_arc"
+            ReferencedContainer = "container:objc_utils_test.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -56,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B60F443E1C1419750028C68A"
-            BuildableName = "objc_utils_test_non_arc.xctest"
-            BlueprintName = "objc_utils_test_non_arc"
+            BlueprintIdentifier = "B6C413FE1CDDC8F40012095F"
+            BuildableName = "objc_utils_test_ios_non_arc.xctest"
+            BlueprintName = "objc_utils_test_ios_non_arc"
             ReferencedContainer = "container:objc_utils_test.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -71,15 +79,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B60F443E1C1419750028C68A"
-            BuildableName = "objc_utils_test_non_arc.xctest"
-            BlueprintName = "objc_utils_test_non_arc"
-            ReferencedContainer = "container:objc_utils_test.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
