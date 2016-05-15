@@ -81,4 +81,12 @@ static NSInteger _objectCount = 0;
     XCTAssertEqual(_objectCount, 0);
 }
 
+- (void)test_init_with_object {
+    NSString *stringObject = @"test_string";
+    YASUnownedObject<NSString *> *unowned = [[YASUnownedObject<NSString *> alloc] initWithObject:stringObject];
+
+    NSString *weakStringObject = unowned.object;
+    XCTAssertEqualObjects(stringObject, weakStringObject);
+}
+
 @end
