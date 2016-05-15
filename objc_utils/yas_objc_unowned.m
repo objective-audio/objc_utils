@@ -13,6 +13,14 @@
 
 @implementation YASUnownedObject
 
+- (instancetype)initWithObject:(nullable id)object {
+    self = [super init];
+    if (self) {
+        [self setObject:object];
+    }
+    return self;
+}
+
 - (void)setObject:(nullable id)object {
     self.weakObject = object;
 }
