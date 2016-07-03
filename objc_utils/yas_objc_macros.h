@@ -45,11 +45,15 @@
 
 #if TARGET_OS_IPHONE
 
+@class UIColor, UIView, UIViewController;
+
 #define yas_objc_color UIColor
 #define yas_objc_view UIView
 #define yas_objc_view_controller UIViewController
 
 #elif TARGET_OS_MAC
+
+@class NSColor, NSView, NSViewController;
 
 #define yas_objc_color NSColor
 #define yas_objc_view NSView
