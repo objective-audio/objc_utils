@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)setObject:(nullable T)object;
 - (nullable T)object;
-- (nullable T)retainedObject;
+- (nullable T)retainedObject NS_RETURNS_RETAINED;
 - (nullable T)autoreleasedObject;
 
 @end
