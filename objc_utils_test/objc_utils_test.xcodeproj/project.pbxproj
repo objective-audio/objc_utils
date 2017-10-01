@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B6C413FA1CDDC4AD0012095F /* yas_objc_mac_class_tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C413F91CDDC4AD0012095F /* yas_objc_mac_class_tests.m */; };
 		B6C414021CDDC8F40012095F /* yas_objc_ios_class_tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C414011CDDC8F40012095F /* yas_objc_ios_class_tests.m */; };
+		B6E429A61F808BDF00DFF91E /* yas_mac_struct_tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E429A51F808BDF00DFF91E /* yas_mac_struct_tests.m */; };
+		B6E429A81F808E3700DFF91E /* yas_ios_struct_tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E429A71F808E3700DFF91E /* yas_ios_struct_tests.m */; };
 		B6F2CAE91CDE219700EF584B /* yas_objc_unowned.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F2CAE81CDE219700EF584B /* yas_objc_unowned.m */; };
 		B6F2CAEA1CDE219700EF584B /* yas_objc_unowned.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F2CAE81CDE219700EF584B /* yas_objc_unowned.m */; };
 		B6F2CAED1CDE250800EF584B /* yas_objc_unowned_tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F2CAEC1CDE250800EF584B /* yas_objc_unowned_tests.m */; };
@@ -23,6 +25,8 @@
 		B6C413FF1CDDC8F40012095F /* objc_utils_test_ios_non_arc.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = objc_utils_test_ios_non_arc.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6C414011CDDC8F40012095F /* yas_objc_ios_class_tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = yas_objc_ios_class_tests.m; sourceTree = "<group>"; };
 		B6C414031CDDC8F40012095F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6E429A51F808BDF00DFF91E /* yas_mac_struct_tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = yas_mac_struct_tests.m; sourceTree = "<group>"; };
+		B6E429A71F808E3700DFF91E /* yas_ios_struct_tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = yas_ios_struct_tests.m; sourceTree = "<group>"; };
 		B6F2CAE71CDE219700EF584B /* yas_objc_unowned.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yas_objc_unowned.h; sourceTree = "<group>"; };
 		B6F2CAE81CDE219700EF584B /* yas_objc_unowned.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yas_objc_unowned.m; sourceTree = "<group>"; };
 		B6F2CAEC1CDE250800EF584B /* yas_objc_unowned_tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = yas_objc_unowned_tests.m; path = objc_utils_test_common/yas_objc_unowned_tests.m; sourceTree = SOURCE_ROOT; };
@@ -70,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				B6C413F91CDDC4AD0012095F /* yas_objc_mac_class_tests.m */,
+				B6E429A51F808BDF00DFF91E /* yas_mac_struct_tests.m */,
 				B60F44441C1419750028C68A /* Info.plist */,
 			);
 			name = objc_utils_test_mac_non_arc;
@@ -91,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				B6C414011CDDC8F40012095F /* yas_objc_ios_class_tests.m */,
+				B6E429A71F808E3700DFF91E /* yas_ios_struct_tests.m */,
 				B6C414031CDDC8F40012095F /* Info.plist */,
 			);
 			path = objc_utils_test_ios_non_arc;
@@ -148,7 +154,7 @@
 		B60F44351C1419420028C68A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				TargetAttributes = {
 					B60F443E1C1419750028C68A = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -198,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6E429A61F808BDF00DFF91E /* yas_mac_struct_tests.m in Sources */,
 				B6C413FA1CDDC4AD0012095F /* yas_objc_mac_class_tests.m in Sources */,
 				B6F2CAE91CDE219700EF584B /* yas_objc_unowned.m in Sources */,
 				B6F2CAED1CDE250800EF584B /* yas_objc_unowned_tests.m in Sources */,
@@ -210,6 +217,7 @@
 			files = (
 				B6C414021CDDC8F40012095F /* yas_objc_ios_class_tests.m in Sources */,
 				B6F2CAEA1CDE219700EF584B /* yas_objc_unowned.m in Sources */,
+				B6E429A81F808E3700DFF91E /* yas_ios_struct_tests.m in Sources */,
 				B6F2CAEE1CDE250800EF584B /* yas_objc_unowned_tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,12 +230,18 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -249,12 +263,18 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

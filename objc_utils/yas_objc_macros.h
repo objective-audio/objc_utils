@@ -50,6 +50,7 @@
 #define yas_objc_color UIColor
 #define yas_objc_view UIView
 #define yas_objc_view_controller UIViewController
+#define yas_edge_insets UIEdgeInsets
 
 #elif TARGET_OS_MAC
 
@@ -58,5 +59,6 @@
 #define yas_objc_color NSColor
 #define yas_objc_view NSView
 #define yas_objc_view_controller NSViewController
+#define yas_edge_insets NSEdgeInsets
 
 #endif
