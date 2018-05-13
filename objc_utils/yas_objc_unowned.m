@@ -2,8 +2,8 @@
 //  yas_objc_weak.m
 //
 
-#import "yas_objc_macros.h"
 #import "yas_objc_unowned.h"
+#import "yas_objc_macros.h"
 
 // clang-format off
 @interface YASUnownedObject <T> ()

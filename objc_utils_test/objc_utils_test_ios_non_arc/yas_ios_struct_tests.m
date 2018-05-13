@@ -2,8 +2,8 @@
 //  yas_ios_struct_tests.m
 //
 
-#import <XCTest/XCTest.h>
 #import <UIKit/UIKit.h>
+#import <XCTest/XCTest.h>
 #import "yas_objc_macros.h"
 
 @interface yas_ios_struct_tests : XCTestCase
@@ -22,12 +22,12 @@
 
 - (void)test_edge_insets {
     yas_edge_insets edge_insets;
-    
+
     edge_insets.top = 1.0;
     edge_insets.left = 2.0;
     edge_insets.bottom = 4.0;
     edge_insets.right = 16.0;
-    
+
     XCTAssertEqual(edge_insets.top, 1.0);
     XCTAssertEqual(edge_insets.left, 2.0);
     XCTAssertEqual(edge_insets.bottom, 4.0);
