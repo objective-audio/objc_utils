@@ -3,7 +3,7 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "yas_objc_macros.h"
+#import <objc_utils/objc_utils.h>
 
 @interface yas_objc_ios_class_tests : XCTestCase
 

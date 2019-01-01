@@ -3,8 +3,7 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "yas_objc_macros.h"
-#import "yas_objc_unowned.h"
+#import <objc_utils/objc_utils.h>
 
 static NSInteger _objectCount = 0;
 
