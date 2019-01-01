@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		B6359E1A21DB73FF00481348 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6359E1921DB73FF00481348 /* Accelerate.framework */; };
 		B684E9DD21DB204800599A55 /* objc_utils.h in Headers */ = {isa = PBXBuildFile; fileRef = B684E9DB21DB204800599A55 /* objc_utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B684E9E621DB207100599A55 /* yas_objc_utils.h in Headers */ = {isa = PBXBuildFile; fileRef = B684E9E221DB207100599A55 /* yas_objc_utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B684E9E621DB207100599A55 /* yas_objc_utils_umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B684E9E221DB207100599A55 /* yas_objc_utils_umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B684E9E721DB207100599A55 /* yas_objc_unowned.m in Sources */ = {isa = PBXBuildFile; fileRef = B684E9E321DB207100599A55 /* yas_objc_unowned.m */; };
 		B684E9E821DB207100599A55 /* yas_objc_macros.h in Headers */ = {isa = PBXBuildFile; fileRef = B684E9E421DB207100599A55 /* yas_objc_macros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B684E9E921DB207100599A55 /* yas_objc_unowned.h in Headers */ = {isa = PBXBuildFile; fileRef = B684E9E521DB207100599A55 /* yas_objc_unowned.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -20,7 +20,7 @@
 		B684E9D821DB204800599A55 /* objc_utils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = objc_utils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B684E9DB21DB204800599A55 /* objc_utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = objc_utils.h; sourceTree = "<group>"; };
 		B684E9DC21DB204800599A55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B684E9E221DB207100599A55 /* yas_objc_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yas_objc_utils.h; sourceTree = "<group>"; };
+		B684E9E221DB207100599A55 /* yas_objc_utils_umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yas_objc_utils_umbrella.h; sourceTree = "<group>"; };
 		B684E9E321DB207100599A55 /* yas_objc_unowned.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yas_objc_unowned.m; sourceTree = "<group>"; };
 		B684E9E421DB207100599A55 /* yas_objc_macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yas_objc_macros.h; sourceTree = "<group>"; };
 		B684E9E521DB207100599A55 /* yas_objc_unowned.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yas_objc_unowned.h; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 		B684E9E121DB207100599A55 /* objc_utils */ = {
 			isa = PBXGroup;
 			children = (
-				B684E9E221DB207100599A55 /* yas_objc_utils.h */,
+				B684E9E221DB207100599A55 /* yas_objc_utils_umbrella.h */,
 				B684E9E321DB207100599A55 /* yas_objc_unowned.m */,
 				B684E9E421DB207100599A55 /* yas_objc_macros.h */,
 				B684E9E521DB207100599A55 /* yas_objc_unowned.h */,
@@ -92,7 +92,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B684E9E621DB207100599A55 /* yas_objc_utils.h in Headers */,
+				B684E9E621DB207100599A55 /* yas_objc_utils_umbrella.h in Headers */,
 				B684E9E921DB207100599A55 /* yas_objc_unowned.h in Headers */,
 				B684E9E821DB207100599A55 /* yas_objc_macros.h in Headers */,
 				B684E9DD21DB204800599A55 /* objc_utils.h in Headers */,
@@ -126,7 +126,7 @@
 		B684E9CD21DB201100599A55 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1010;
 				TargetAttributes = {
 					B684E9D721DB204800599A55 = {
 						CreatedOnToolsVersion = 10.0;
@@ -175,12 +175,64 @@
 		B684E9D121DB201100599A55 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
 		B684E9D221DB201100599A55 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 			};
 			name = Release;
 		};
@@ -215,7 +267,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
@@ -293,7 +345,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
