@@ -8,5 +8,5 @@ notifications:
 install:
   - brew install clang-format
 script:
-  - xcodebuild -project objc_utils_test/objc_utils_test.xcodeproj -scheme objc_utils_test_mac_non_arc -configuration Debug OBJROOT=build -sdk macosx clean test
-  - xcodebuild -project objc_utils_test/objc_utils_test.xcodeproj -scheme objc_utils_test_ios_non_arc -configuration Debug OBJROOT=build -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.3' clean test
+  - xcodebuild -workspace objc_utils.xcworkspace -scheme objc_utils_test_mac_non_arc -configuration Debug OBJROOT=build -sdk macosx clean test
+  - xcodebuild -workspace objc_utils.xcworkspace -scheme objc_utils_test_ios_non_arc -configuration Debug OBJROOT=build -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.3' clean test
