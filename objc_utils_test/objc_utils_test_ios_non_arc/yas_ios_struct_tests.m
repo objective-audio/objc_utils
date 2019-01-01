@@ -2,9 +2,8 @@
 //  yas_ios_struct_tests.m
 //
 
-#import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
-#import "yas_objc_macros.h"
+#import <objc_utils/objc_utils.h>
 
 @interface yas_ios_struct_tests : XCTestCase
 
