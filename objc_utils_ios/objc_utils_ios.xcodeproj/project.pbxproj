@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6359E1A21DB73FF00481348 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6359E1921DB73FF00481348 /* Accelerate.framework */; };
 		B684E9DD21DB204800599A55 /* objc_utils.h in Headers */ = {isa = PBXBuildFile; fileRef = B684E9DB21DB204800599A55 /* objc_utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B684E9E621DB207100599A55 /* yas_objc_utils.h in Headers */ = {isa = PBXBuildFile; fileRef = B684E9E221DB207100599A55 /* yas_objc_utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B684E9E721DB207100599A55 /* yas_objc_unowned.m in Sources */ = {isa = PBXBuildFile; fileRef = B684E9E321DB207100599A55 /* yas_objc_unowned.m */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B6359E1921DB73FF00481348 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
 		B684E9D821DB204800599A55 /* objc_utils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = objc_utils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B684E9DB21DB204800599A55 /* objc_utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = objc_utils.h; sourceTree = "<group>"; };
 		B684E9DC21DB204800599A55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -29,17 +31,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6359E1A21DB73FF00481348 /* Accelerate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B6359E1821DB73FF00481348 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6359E1921DB73FF00481348 /* Accelerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B684E9CC21DB201100599A55 = {
 			isa = PBXGroup;
 			children = (
 				B684E9DA21DB204800599A55 /* objc_utils */,
 				B684E9D921DB204800599A55 /* Products */,
+				B6359E1821DB73FF00481348 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
