@@ -1,5 +1,5 @@
 language: objective-c
-osx_image: xcode9.3
+osx_image: xcode10.1
 branches:
   only:
     - master
@@ -8,5 +8,5 @@ notifications:
 install:
   - brew install clang-format
 script:
-  - xcodebuild -workspace objc_utils.xcworkspace -scheme objc_utils_test_mac_non_arc -configuration Debug OBJROOT=build -sdk macosx clean test
-  - xcodebuild -workspace objc_utils.xcworkspace -scheme objc_utils_test_ios_non_arc -configuration Debug OBJROOT=build -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.3' clean test
+  - xcodebuild -workspace objc_utils_mac.xcworkspace -scheme objc_utils_mac_tests -configuration Debug OBJROOT=build -sdk macosx clean test
+  - xcodebuild -workspace objc_utils_ios.xcworkspace -scheme objc_utils_ios_tests -configuration Debug OBJROOT=build -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=12.1' clean test

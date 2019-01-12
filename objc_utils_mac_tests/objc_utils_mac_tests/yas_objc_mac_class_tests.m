@@ -20,9 +20,9 @@
 }
 
 - (void)test_class {
-    //    XCTAssertEqualObjects([yas_objc_view class], [NSView class]);
-    //    XCTAssertEqualObjects([yas_objc_view_controller class], [NSViewController class]);
-    //    XCTAssertEqualObjects([yas_objc_color class], [NSColor class]);
+    XCTAssertEqualObjects([yas_objc_view class], [NSView class]);
+    XCTAssertEqualObjects([yas_objc_view_controller class], [NSViewController class]);
+    XCTAssertEqualObjects([yas_objc_color class], [NSColor class]);
 }
 
 @end
