@@ -2,12 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:objc_utils_test/objc_utils_test.xcodeproj">
+      location = "group:objc_utils_mac_tests/objc_utils_mac_tests.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:objc_utils_mac/objc_utils_mac.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:objc_utils_ios/objc_utils_ios.xcodeproj">
    </FileRef>
 </Workspace>

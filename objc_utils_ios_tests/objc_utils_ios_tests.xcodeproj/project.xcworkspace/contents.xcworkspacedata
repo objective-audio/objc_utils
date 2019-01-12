@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:objc_utils_test.xcodeproj">
+      location = "self:objc_utils_ios_tests.xcodeproj">
    </FileRef>
 </Workspace>
