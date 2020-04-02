@@ -6,7 +6,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YASUnownedObject <T> : NSObject
+@interface YASUnownedObject<T> : NSObject
 
 - (instancetype)initWithObject:(nullable T)object;
 
