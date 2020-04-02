@@ -6,7 +6,7 @@
 #import "yas_objc_macros.h"
 
 // clang-format off
-@interface YASUnownedObject <T> ()
+@interface YASUnownedObject<T> ()
 @property(nonatomic, yas_weak_for_property) T weakObject;
 @end
 // clang-format on
