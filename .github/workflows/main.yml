@@ -27,4 +27,4 @@ jobs:
       run: |
         brew install clang-format
         xcodebuild -workspace objc_utils_mac.xcworkspace -scheme objc_utils_mac_tests -configuration Debug OBJROOT=build -sdk macosx clean test
-        xcodebuild -workspace objc_utils_ios.xcworkspace -scheme objc_utils_ios_tests -configuration Debug OBJROOT=build -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8,OS=13.2.2' clean test
+        xcodebuild -workspace objc_utils_ios.xcworkspace -scheme objc_utils_ios_tests -configuration Debug OBJROOT=build -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8,OS=13.3' clean test
