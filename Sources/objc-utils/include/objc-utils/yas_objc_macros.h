@@ -6,7 +6,9 @@
 
 #pragma once
 
-#if ! __has_feature(objc_arc)
+#import <TargetConditionals.h>
+
+#if !__has_feature(objc_arc)
     #define yas_autorelease(__v) [__v autorelease]
     #define yas_retain(__v) [__v retain]
     #define yas_retain_or_ignore(__v) [__v retain]
