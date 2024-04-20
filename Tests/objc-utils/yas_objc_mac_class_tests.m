@@ -2,8 +2,12 @@
 //  yas_objc_mac_class_tests.m
 //
 
+#import <TargetConditionals.h>
+
+#if !TARGET_OS_IPHONE && TARGET_OS_MAC
+
 #import <XCTest/XCTest.h>
-#import <objc_utils/objc_utils.h>
+@import objc_utils;
 
 @interface yas_objc_mac_class_tests : XCTestCase
 
@@ -26,3 +30,5 @@
 }
 
 @end
+
+#endif
