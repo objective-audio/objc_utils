@@ -3,8 +3,8 @@
 //
 
 #import <XCTest/XCTest.h>
-#import <objc-utils/yas_objc_unowned.h>
 #import <objc-utils/yas_objc_macros.h>
+#import <objc-utils/yas_objc_unowned.h>
 
 static NSInteger _objectCount = 0;
 
@@ -53,7 +53,7 @@ static NSInteger _objectCount = 0;
     yas_retain_or_ignore(retainedObject);
 }
 
-//#if !__has_feature(objc_arc)
+// #if !__has_feature(objc_arc)
 
 - (void)test_object {
     _objectCount = 0;
@@ -83,7 +83,7 @@ static NSInteger _objectCount = 0;
     XCTAssertEqual(_objectCount, 0);
 }
 
-//#endif
+// #endif
 
 - (void)test_init_with_object {
     NSString *stringObject = @"test_string";
